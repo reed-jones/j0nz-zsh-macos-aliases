@@ -23,7 +23,7 @@ alias hup="homestead up"
 alias hdown="homestead halt"
 alias hr="homestead reload"
 alias hrp="homestead reload --provision"
-alias hssh"homestead ssh"
+alias hssh="homestead ssh"
 alias hedit="nvim $HOMESTEAD_DIR/Homestead.yaml"
 
 # switch nginx config between local directories
