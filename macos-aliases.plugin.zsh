@@ -29,7 +29,7 @@ alias hedit="nvim $HOMESTEAD_DIR/Homestead.yaml"
 # switch nginx config between local directories
 function switch() {
   local config="/usr/local/etc/nginx/nginx.conf"
-  sed -i".bak" "s/\s*proxy_pass.*\ http:\/\/$1;/" $config
+  sed -i".bak" "s/\s*proxy_pass.*/http:\/\/$1;/" $config
   brew services restart nginx
 }
 
