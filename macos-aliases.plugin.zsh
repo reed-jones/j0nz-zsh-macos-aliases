@@ -45,4 +45,5 @@ alias brewup="brew update; brew upgrade; brew prune; brew cleanup; brew doctor"
 # misc
 ########
 alias myip="ipconfig getifaddr en0"
+alias fastlane="/usr/local/Caskroom/fastlane/latest/fastlane_lib/fastlane"
 
