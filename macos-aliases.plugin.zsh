@@ -47,3 +47,8 @@ alias brewup="brew update; brew upgrade; brew prune; brew cleanup; brew doctor"
 alias myip="ipconfig getifaddr en0"
 alias fastlane="/usr/local/Caskroom/fastlane/latest/fastlane_lib/fastlane"
 
+# usage killport :8081
+function killport() {
+  kill -9 $(lsof -i $1 | grep node | awk '{print $2}' | grep -v PID)
+}
+
