@@ -52,3 +52,19 @@ function killport() {
   kill -9 $(lsof -i $1 | grep node | awk '{print $2}' | grep -v PID)
 }
 
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+##
+# Your previous /Users/reed/.bash_profile file was backed up as /Users/reed/.bash_profile.macports-saved_2019-06-04_at_13:50:04
+##
+
+# MacPorts Installer addition on 2019-06-04_at_13:50:04: adding an appropriate PATH variable for use with MacPorts.
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+# Finished adapting your PATH environment variable for use with MacPorts.
+
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
