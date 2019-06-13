@@ -46,7 +46,7 @@ alias brewup="brew update; brew upgrade; brew prune; brew cleanup; brew doctor"
 # misc
 ########
 alias myip="ipconfig getifaddr en0"
-alias fastlane="/usr/local/Caskroom/fastlane/latest/fastlane_lib/fastlane"
+# alias fastlane="/usr/local/Caskroom/fastlane/latest/fastlane_lib/fastlane" # use ruby gems instead
 
 # usage killport :8081
 function killport() {
